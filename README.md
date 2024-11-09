@@ -11,7 +11,7 @@ cd /path/to/minimal-tts-apis
 make deploy
 ```
 
-This will deploy the APIs to your local machine. You can then access the APIs by making HTTP requests to `http://localhost:8000/apitts`.
+This will deploy the APIs to your local machine. You can then access the APIs by making HTTP requests to `http://localhost:8000/api-tts`.
 
 To stop the APIs, run the following command:
 
