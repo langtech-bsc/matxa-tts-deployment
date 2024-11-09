@@ -1,0 +1,11 @@
+services:
+  minimal-tts-api:
+    image: josegiraldobsc/minimal-tts-api
+    container_name: minimal-tts-api
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    # environment:
+    #   - SPEECH_SPEED=${SPEECH_SPEED}
+    #   - MP_WORKERS=${MP_WORKERS}
+    shm_size: ${SHM_SIZE-8G}

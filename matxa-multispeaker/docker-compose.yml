@@ -1,0 +1,8 @@
+services:
+  minimal-tts-multispeaker-api:
+    image: alexplilja/minimal-tts-multispeaker
+    container_name: minimal-tts-multispeaker-api
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    shm_size: ${SHM_SIZE-8G}
